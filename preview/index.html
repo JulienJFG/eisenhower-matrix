@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matrice d'Eisenhower - Aperçu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            </svg>
+            <span class="logo-text">Matrice d'Eisenhower</span>
+          </div>
+          <div class="user-menu">
+            <span class="user-email">utilisateur@exemple.com</span>
+            <div class="user-avatar">U</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="dashboard-container">
+      <div class="dashboard-header">
+        <h1 class="dashboard-title">Ma Matrice d'Eisenhower</h1>
+        <button class="archive-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="button-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z" />
+            <path fill-rule="evenodd" d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" clip-rule="evenodd" />
+          </svg>
+          Archives
+        </button>
+      </div>
+
+      <div class="matrix-container">
+        <!-- Quadrant 1: Important & Urgent -->
+        <div class="quadrant quadrant-important-urgent">
+          <div class="quadrant-title">
+            <h2>Important & Urgent</h2>
+            <span class="quadrant-description">À faire en premier</span>
+          </div>
+          <div class="task-list">
+            <div class="task-item">
+              <div class="task-header">
+                <div class="task-checkbox-title">
+                  <input type="checkbox" class="task-checkbox">
+                  <h3 class="task-title">Compléter la proposition de projet</h3>
+                </div>
+                <div class="task-actions">
+                  <button class="task-menu-button">⋮</button>
+                </div>
+              </div>
+              <p class="task-description">Finaliser le document et l'envoyer au client avant la réunion</p>
+              <div class="task-meta">
+                <span class="task-deadline">Échéance: 10 avr. 2025</span>
+              </div>
+            </div>
+            <div class="task-item">
+              <div class="task-header">
+                <div class="task-checkbox-title">
+                  <input type="checkbox" class="task-checkbox">
+                  <h3 class="task-title">Préparer les diapositives de présentation</h3>
+                </div>
+                <div class="task-actions">
+                  <button class="task-menu-button">⋮</button>
+                </div>
+              </div>
+              <p class="task-description">Créer les diapositives pour la réunion client de demain</p>
+              <div class="task-meta">
+                <span class="task-deadline">Échéance: 9 avr. 2025</span>
+              </div>
+            </div>
+          </div>
+          <button class="add-task-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="add-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+            </svg>
+            Ajouter une tâche
+          </button>
+        </div>
+
+        <!-- Quadrant 2: Important & Not Urgent -->
+        <div class="quadrant quadrant-important-not-urgent">
+          <div class="quadrant-title">
+            <h2>Important & Non Urgent</h2>
+            <span class="quadrant-description">Planifier</span>
+          </div>
+          <div class="task-list">
+            <div class="task-item">
+              <div class="task-header">
+                <div class="task-checkbox-title">
+                  <input type="checkbox" class="task-checkbox">
+                  <h3 class="task-title">Rechercher de nouvelles stratégies marketing</h3>
+                </div>
+                <div class="task-actions">
+                  <button class="task-menu-button">⋮</button>
+                </div>
+              </div>
+              <p class="task-description">Explorer de nouveaux canaux et approches pour le T3</p>
+              <div class="task-meta">
+                <span class="task-deadline">Échéance: 30 avr. 2025</span>
+              </div>
+            </div>
+            <div class="task-item">
+              <div class="task-header">
+                <div class="task-checkbox-title">
+                  <input type="checkbox" class="task-checkbox">
+                  <h3 class="task-title">Planifier une activité de team building</h3>
+                </div>
+                <div class="task-actions">
+                  <button class="task-menu-button">⋮</button>
+                </div>
+              </div>
+              <p class="task-description">Organiser l'événement trimestriel d'équipe</p>
+            </div>
+          </div>
+          <button class="add-task-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="add-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+            </svg>
+            Ajouter une tâche
+          </button>
+        </div>
+
+        <!-- Quadrant 3: Not Important & Urgent -->
+        <div class="quadrant quadrant-not-important-urgent">
+          <div class="quadrant-title">
+            <h2>Non Important & Urgent</h2>
+            <span class="quadrant-description">Déléguer</span>
+          </div>
+          <div class="task-list">
+            <div class="task-item">
+              <div class="task-header">
+                <div class="task-checkbox-title">
+                  <input type="checkbox" class="task-checkbox">
+                  <h3 class="task-title">Répondre aux emails non critiques</h3>
+                </div>
+                <div class="task-actions">
+                  <button class="task-menu-button">⋮</button>
+                </div>
+              </div>
+              <p class="task-description">Vider la boîte de réception des réponses en attente</p>
+              <div class="task-meta">
+                <span class="task-deadline">Échéance: 9 avr. 2025</span>
+              </div>
+            </div>
+          </div>
+          <button class="add-task-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="add-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+            </svg>
+            Ajouter une tâche
+          </button>
+        </div>
+
+        <!-- Quadrant 4: Not Important & Not Urgent -->
+        <div class="quadrant quadrant-not-important-not-urgent">
+          <div class="quadrant-title">
+            <h2>Non Important & Non Urgent</h2>
+            <span class="quadrant-description">Éliminer</span>
+          </div>
+          <div class="task-list">
+            <div class="task-item">
+              <div class="task-header">
+                <div class="task-checkbox-title">
+                  <input type="checkbox" class="task-checkbox">
+                  <h3 class="task-title">Parcourir les actualités du secteur</h3>
+                </div>
+                <div class="task-actions">
+                  <button class="task-menu-button">⋮</button>
+                </div>
+              </div>
+              <p class="task-description">Lire les dernières mises à jour du domaine</p>
+            </div>
+          </div>
+          <button class="add-task-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="add-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+            </svg>
+            Ajouter une tâche
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">© 2025 Application Matrice d'Eisenhower. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Task Modal (Hidden by default) -->
+    <div class="modal-overlay" id="taskModal" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Ajouter une nouvelle tâche</h2>
+          <button class="modal-close">&times;</button>
+        </div>
+        <form class="task-form">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="task-title" class="form-label">Titre</label>
+              <input id="task-title" type="text" class="form-input" placeholder="Entrez le titre de la tâche" required>
+            </div>
+            <div class="form-group">
+              <label for="task-description" class="form-label">Description</label>
+              <textarea id="task-description" class="form-input" placeholder="Entrez la description de la tâche" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="task-deadline" class="form-label">Échéance (optionnel)</label>
+              <input id="task-deadline" type="date" class="form-input">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button button-secondary">Annuler</button>
+            <button type="submit" class="button button-primary">Ajouter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
